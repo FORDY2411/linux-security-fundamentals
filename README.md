@@ -28,7 +28,8 @@ ls -l ~/cia.txt
 ```
 * **Análisis Técnico:** Al aplicar `chmod 600`, los permisos se reducen estrictamente al propietario del archivo (`-rw-------`), protegiendo la confidencialidad de los datos frente a accesos no autorizados en el sistema.
 
-> 📸 *[Inserta aquí una captura de pantalla de tu terminal mostrando el comando `ls -l ~/cia.txt` con los permisos modificados]*
+> <img width="1280" height="466" alt="paso1 png" src="https://github.com/user-attachments/assets/9c9bbfa4-551c-4054-96ea-48aeb2b06ce9" />
+
 
 ---
 
@@ -41,7 +42,8 @@ sudo -l
 ```
 * **Análisis Técnico:** El comando `id` devuelve el identificador único del usuario (UID) y los grupos a los que pertenece (roles). Por otra parte, `sudo -l` enumera las acciones específicas que el sistema autoriza a ejecutar con privilegios de superusuario (`root`). Esto demuestra que la autenticación (quién soy) precede y difiere de la autorización (qué puedo hacer).
 
-> 📸 *[Inserta aquí una captura de pantalla con el resultado de los comandos `id` y `sudo -l` en tu Kali]*
+> <img width="1280" height="950" alt="paso2" src="https://github.com/user-attachments/assets/fa6e8326-cc6e-4b8b-a51d-c1027e4bcf7b" />
+
 
 ---
 
@@ -57,7 +59,8 @@ sha256sum ~/cia.txt
 ```
 * **Análisis Técnico:** Se comprobó el **efecto avalancha**: cambiar un solo carácter (de "hola" a "Hola") resulta en un hash completamente distinto. Asimismo, al agregar un carácter (`!`) al archivo `cia.txt`, su hash cambió drásticamente, demostrando cómo las funciones hash validan de inmediato la **Integridad** de la información sin necesidad de leer todo el contenido.
 
-> 📸 *[Inserta aquí una captura de pantalla mostrando la diferencia entre los hashes generados]*
+> <img width="1280" height="488" alt="paso3" src="https://github.com/user-attachments/assets/b64a3979-9276-4b2e-bc6f-548f7d5b6f5f" />
+
 
 ---
 
@@ -69,7 +72,8 @@ echo | openssl s_client -connect example.com:443 -servername example.com 2>/dev/
 ```
 * **Análisis Técnico:** El comando extrae información del handshake criptográfico. Se verificó el **Subject** (entidad dueña del sitio web), el **Issuer** (la Autoridad de Certificación de confianza que lo firmó) y las **Dates** (periodo de vigencia). Esto demuestra cómo nuestro navegador autentica la identidad del servidor web antes de iniciar una sesión segura cifrada.
 
-> 📸 *[Inserta aquí una captura de pantalla del certificado extraído en tu terminal]*
+> <img width="1280" height="277" alt="paso4" src="https://github.com/user-attachments/assets/7be0ac4b-4916-4e83-9f09-edfb702fda70" />
+
 
 ---
 
