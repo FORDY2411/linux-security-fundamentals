@@ -28,7 +28,8 @@ ls -l ~/cia.txt
 ```
 * **Análisis Técnico:** Al aplicar `chmod 600`, los permisos se reducen estrictamente al propietario del archivo (`-rw-------`), protegiendo la confidencialidad de los datos frente a accesos no autorizados en el sistema.
 
-> <img width="1280" height="466" alt="paso1 png" src="https://github.com/user-attachments/assets/9c9bbfa4-551c-4054-96ea-48aeb2b06ce9" />
+> <img width="1280" height="466" alt="paso1 png" src="https://github.com/user-attachments/assets/9c9bbfa4-551c-4054-96ea-48aeb2b06ce9" /> <img width="1280" height="403" alt="paso1 1" src="https://github.com/user-attachments/assets/814e164e-c9c4-4a17-ab31-f1f9aa5cfc57" />
+
 
 
 ---
