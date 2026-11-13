@@ -60,7 +60,8 @@ sha256sum ~/cia.txt
 ```
 * **Análisis Técnico:** Se comprobó el **efecto avalancha**: cambiar un solo carácter (de "hola" a "Hola") resulta en un hash completamente distinto. Asimismo, al agregar un carácter (`!`) al archivo `cia.txt`, su hash cambió drásticamente, demostrando cómo las funciones hash validan de inmediato la **Integridad** de la información sin necesidad de leer todo el contenido.
 
-> <img width="1280" height="488" alt="paso3" src="https://github.com/user-attachments/assets/b64a3979-9276-4b2e-bc6f-548f7d5b6f5f" />
+> <img width="1280" height="488" alt="paso3" src="https://github.com/user-attachments/assets/b64a3979-9276-4b2e-bc6f-548f7d5b6f5f" /> <img width="1280" height="277" alt="paso3 1" src="https://github.com/user-attachments/assets/2a0f901d-fb80-44d8-be9c-f9a3058afc9c" />
+
 
 
 ---
